@@ -5,18 +5,14 @@ interface EquipamientoProps {
     equipo: Objeto[]
 }
 
-
-
 const Equipamiento: React.FC<EquipamientoProps> = ({ equipo }) => {
     return (
         <div key={"equipamiento"} id="equipamiento" className="equipamiento-cmp">
             {
                 equipo.map((objeto, i) => {
-                    // TODO: Mostrar el icono de cada objeto del equipamiento.
-                    return <button id={`equipo${i + 1}`} key={`equipo${i + 1}`} className="equipo-btn btn-custom el-blanco">
-                        {/* <img src={objeto.icono} alt="" /> */}
-                        <img src="vite.svg" alt="" />
-                        <span className="texto-negro">{objeto.nivel}</span>
+                    return <button id={`equipo${i + 1}`} key={`equipo${i + 1}`} className="atributos-btn equipo-btn btn-custom el-blanco">
+                        <img src={`/src/assets/${objeto.icono}`} alt="" className="atributo-img" key={`equipo${i+1}Btn`}/>
+                        <span className="texto-negro atributo-txt">{objeto.nivel}</span>
                     </button>
                 })
             }

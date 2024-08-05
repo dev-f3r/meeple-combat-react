@@ -133,18 +133,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.atributo-txt {
+    width: 100%;
+    border-top: solid 2px #000;
+}
+.atributo-img {
+    width: 100%;
+    height: 50%;
+    padding: 1px;
+    border-radius: 5px;
+    transform: translate(0px, -1px);
 }
 
 .encabezado-equipo {
     grid-column: 7 / span 3;
     grid-row: 11 / span 1;
-}
-.equipo-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 .equipamiento-cmp {
