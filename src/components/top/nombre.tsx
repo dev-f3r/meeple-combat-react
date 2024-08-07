@@ -1,5 +1,7 @@
 import { Component } from 'react';
 
+import "./../../styles/top.css";
+
 interface NombreProps {
     nombre: string;
 }

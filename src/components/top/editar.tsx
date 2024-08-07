@@ -42,8 +42,8 @@ class Editar extends Component<EditarProps, EditarState> {
                 onClick={() => this.handleClick()}
             >
                 <img
-                    id="editar_img"
-                    className="editar-img btn-img"
+                    id="editarImg"
+                    className="editar-img btn-custom-img"
                     src={this.state.imgSrc}
                     alt=""
                 />
