@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "../../styles/bot.css";
+
 interface AccionBtnProps {
     texto: string,
 }
@@ -20,7 +22,7 @@ class AccionBtn extends Component<AccionBtnProps, AccionBtnState> {
         const { texto } = this.props;
 
         return (
-            <button className="btn-custom accion-btn el-blanco texto-negro">{texto}</button>
+            <button className="btn-custom accion-btn el-blanco texto-negro item-grilla">{texto.toUpperCase()}</button>
         )
     }
 }

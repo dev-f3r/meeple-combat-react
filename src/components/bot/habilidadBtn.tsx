@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+import "../../styles/bot.css";
+
 interface HabilidadBtnProps {
     slot: number;
     nombre: string;
@@ -11,7 +13,7 @@ class HabilidadBtn extends Component<HabilidadBtnProps> {
 
         return (
             <button className="btn-custom habilidad-btn el-blanco texto-negro" id={`habilidad${slot}`}>
-                {nombre}
+                {nombre.toUpperCase()}
             </button>
         );
     }
