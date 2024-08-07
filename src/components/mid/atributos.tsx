@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { AtributosPersonaje } from "../../juego/modelos/utils";
 
+import "./../../styles/mid.css";
+
 interface AtributosProps {
     atributos: AtributosPersonaje;
 }
@@ -28,9 +30,12 @@ class Atributos extends Component<AtributosProps, AtributosState> {
                     if (key === "vidaActl") nombreImg = "vida";
 
                     if (key !== "vidaMax" && key !== "poderMax") {
-                        return <button className="atributos-btn btn-custom el-blanco" id={`${key}_btn`}>
-                            <img id={`${key}Img`} src={`/src/assets/img/${nombreImg}.png`} className="atributo-img" />
-                            <span className="atributo-txt texto-negro" id={`${key}_txt`}>
+                        return <button className="atributos-btn btn-custom el-blanco" 
+                        id={`${key}Btn`}
+                        key={`${key}`}
+                        >
+                            <img id={`${key}Img`} src={`/src/assets/img/${nombreImg}.png`} className="atributo-img btn-custom-img" />
+                            <span className="atributo-txt texto-negro" id={`${key}Val`}>
                                 {value}
                             </span>
                         </button>
